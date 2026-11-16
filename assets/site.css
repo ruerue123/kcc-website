@@ -388,3 +388,20 @@ main dd a:hover{color:var(--red)}
  .cols5 h4{font-size:19px}
  .cols5 p{font-size:15.5px}
 }
+/* one-row nav bar: logo left, links in the middle, Giving right */
+@media(min-width:1001px){
+ header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 50px}
+ header .top{display:contents}
+ header .logo{order:1;flex:none}
+ header nav{order:2;margin-left:auto}
+ header .top .btn{order:3;margin:0 0 0 18px;flex:none}
+ header nav ul{margin:0;flex-wrap:nowrap}
+ header nav a{white-space:nowrap}
+ .logo img{height:100px}
+}
+@media(min-width:1001px) and (max-width:1280px){
+ header,header.stuck{padding-left:28px;padding-right:28px}
+ header nav a,header.stuck nav a{font-size:15px;padding:10px 9px}
+ header .top .btn{padding:12px 26px}
+ .logo img{height:84px}
+}
