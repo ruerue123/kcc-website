@@ -4,294 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kuwadzana Community Church (KCC) | Faith Ministries</title>
-<meta name="description" content="Kuwadzana Community Church (KCC), Faith Ministries, Kuwadzana 6, Harare. Reach people and turn them into fully devoted followers of Christ.">
-<link rel="icon" href="assets/faith-ministries-logo.png">
+<meta name="description" content="Kuwadzana Community Church (KCC), Faith Ministries, Kuwadzana 6, Harare. Sunday service 08:30 AM. Reach people and turn them into fully devoted followers of Christ.">
+<meta property="og:title" content="Kuwadzana Community Church (KCC) | Faith Ministries">
+<meta property="og:description" content="Kuwadzana Community Church (KCC), Faith Ministries, Kuwadzana 6, Harare. Sunday service 08:30 AM. Reach people and turn them into fully devoted followers of Christ.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ruerue123.github.io/kcc-website/">
+<meta property="og:image" content="https://ruerue123.github.io/kcc-website/assets/photos/fellowship.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--red:#ca373c;--orange:#f66646;--gold:#fdb92e;--dark:#28282e;--slate:#323a3b;--light:#f0f4f7;--text:#6b6e71;--soft:#f8f2f1;--foot:#010813;--footText:#cac2c0}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Nunito,sans-serif;font-size:17px;line-height:1.62;letter-spacing:.1px;color:var(--text);background:#fff}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-h1,h2,h3,h4,h5,h6{font-family:"Kumbh Sans",sans-serif;font-weight:700;color:var(--dark);line-height:1.1;letter-spacing:-.01em}
-h2{font-size:clamp(2rem,4.2vw,47px)}
-.wrap{max-width:1130px;margin:0 auto;padding:0 24px}
-.sp{padding:100px 0}
-.eyebrow{font-family:"Kumbh Sans",sans-serif;font-size:14px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--dark);margin-bottom:14px}
-.center{text-align:center}
-.btn{display:inline-block;font-family:"Kumbh Sans",sans-serif;font-size:13px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;line-height:21px;padding:17px 62px;background:var(--slate);color:#fff;border:0;cursor:pointer;transition:background .25s,color .25s}
-.btn:hover{background:var(--red)}
-.btn.orange{background:var(--orange);padding:13px 40px}
-.btn.orange:hover{background:var(--dark)}
-.btn.pale{background:var(--soft);color:var(--dark);font-size:14px;padding:19px 30px;text-align:center}
-.btn.pale:hover{background:var(--dark);color:#fff}
-
-/* ---------- header (sits over the hero, like BCC) ---------- */
-header{position:absolute;top:0;left:0;right:0;z-index:20;padding:20px 50px}
-.top{display:flex;align-items:flex-start;justify-content:space-between}
-.logo img{height:118px;width:auto;filter:drop-shadow(0 1px 1px rgba(255,255,255,.55)) drop-shadow(0 2px 10px rgba(0,0,0,.45));transition:height .3s,transform .3s}
-.logo:hover img{transform:scale(1.04)}
-.top .btn{margin-top:28px}
-nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:2px;margin-top:16px}
-nav a{display:block;font-family:"Kumbh Sans",sans-serif;font-size:17px;color:var(--soft);padding:13px 14px;transition:color .2s}
-nav a:hover{color:var(--gold)}
-.burger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;margin-top:28px}
-.burger span{display:block;height:2px;background:#fff;margin:7px 6px}
-
-/* ---------- hero slideshow ---------- */
-.hero{position:relative;height:623px;background:var(--dark);overflow:hidden}
-.slide{position:absolute;inset:0;background-size:cover;background-position:center 30%;opacity:0;transition:opacity 1.4s ease}
-.slide.on{opacity:1}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(1,8,19,.8) 0%,rgba(1,8,19,.3) 45%,rgba(1,8,19,.55) 100%)}
-.hero .tag{position:absolute;left:50px;bottom:44px;z-index:2;color:#fff}
-.hero .tag small{display:block;font-family:"Kumbh Sans",sans-serif;font-size:14px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.hero .tag h1{color:#fff;font-size:clamp(2rem,5vw,58px)}
-.dots{position:absolute;right:50px;bottom:50px;z-index:2;display:flex;gap:10px}
-.dots button{width:12px;height:12px;border:2px solid #fff;background:transparent;cursor:pointer;padding:0}
-.dots button.on{background:var(--gold);border-color:var(--gold)}
-
-/* ---------- red vision band ---------- */
-.band{background:var(--red);padding:70px 0}
-.band .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px}
-.band h3{font-size:clamp(1.5rem,3vw,35px);color:var(--soft);max-width:680px}
-.band h3 span{color:var(--gold);display:block}
-.band .stack{display:grid;gap:10px;min-width:325px}
-
-/* ---------- theme / about ---------- */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
-.overlap{position:relative;height:440px}
-.overlap img{position:absolute;object-fit:cover;box-shadow:0 20px 40px rgba(0,0,0,.12)}
-.overlap img:first-child{left:0;top:0;width:70%;height:290px}
-.overlap img:last-child{right:0;bottom:0;width:72%;height:260px;border:8px solid #fff}
-.two h2{margin-bottom:26px}
-.two p{margin-bottom:18px}
-.two .ref{font-family:"Kumbh Sans",sans-serif;font-weight:700;color:var(--dark)}
-.two .btn{margin-top:14px}
-
-/* ---------- mission + principles ---------- */
-.lightbg{background:var(--light)}
-.mission{padding-bottom:70px}
-.mission h2{max-width:780px;margin:0 auto}
-.mission h2 small{display:block;font-size:.45em;font-weight:500;color:var(--text);margin-top:14px;letter-spacing:0}
-.cols4{display:grid;grid-template-columns:repeat(4,1fr);gap:38px;margin-top:60px}
-.cols4 svg{width:62px;height:62px;stroke:var(--red);fill:none;stroke-width:1.4;margin:0 auto 26px;display:block}
-.cols4 h4{font-size:22px;line-height:1.25;margin-bottom:16px}
-.cols4 p{color:#858689}
-
-/* ---------- full-width mosaic ---------- */
-.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:360px 360px}
-.tile{position:relative;overflow:hidden;background:#111}
-.tile.big{grid-row:span 2}
-.tile i{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease}
-.tile:hover i{transform:scale(1.07)}
-.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.78) 100%)}
-.tile div{position:absolute;left:34px;right:20px;bottom:30px;z-index:2}
-.tile h5{color:#fff;font-size:22px;margin-bottom:6px}
-.tile.big h5{font-size:30px}
-.tile span{font-family:"Kumbh Sans",sans-serif;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold)}
-
-/* ---------- pastor ---------- */
-.pastor{display:grid;grid-template-columns:1fr 1.4fr;gap:70px;align-items:center}
-.pastor .frame{aspect-ratio:1;background:var(--light);display:grid;place-items:center;border-left:8px solid var(--red)}
-.pastor .frame b{font-family:"Kumbh Sans",sans-serif;font-size:90px;color:var(--red);letter-spacing:-3px}
-.pastor h2{margin-bottom:22px}
-
-/* ---------- events ---------- */
-.events{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:start}
-.events h2{margin-bottom:22px}
-.ev{display:flex;gap:26px;align-items:center;padding:26px 0;border-bottom:1px solid #dfe4e8}
-.ev:first-child{border-top:1px solid #dfe4e8}
-.ev .d{flex:none;width:84px;height:84px;background:var(--red);color:#fff;display:grid;place-content:center;text-align:center;font-family:"Kumbh Sans",sans-serif}
-.ev .d b{font-size:26px;line-height:1}
-.ev .d small{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:5px}
-.ev h5{font-size:22px;margin-bottom:4px}
-.ev p{font-size:16px}
-
-/* ---------- life at KCC cards (BCC blog layout) ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px;text-align:left}
-.post .ph{position:relative;aspect-ratio:350/261;overflow:hidden}
-.post .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
-.post:hover .ph img{transform:scale(1.06)}
-.post .ph em{position:absolute;left:0;top:0;background:var(--red);color:#fff;font-style:normal;font-family:"Kumbh Sans",sans-serif;font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 16px}
-.post h5{font-size:26px;margin:24px 0 10px}
-.post p{font-size:16px}
-
-/* ---------- giving ---------- */
-.give{background:var(--dark);color:#c9c9cc}
-.give .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;align-items:center}
-.give h2{color:#fff;margin-bottom:20px}
-.give .eyebrow{color:var(--gold)}
-.give .box{border:1px solid rgba(255,255,255,.18);padding:38px}
-.give .box h5{color:#fff;font-size:20px;margin-bottom:14px}
-.give .box li{list-style:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:16px}
-.give .box li:last-child{border:0}
-.give .box b{color:var(--gold);font-weight:700}
-
-/* ---------- contact ---------- */
-.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:80px}
-.contact h2{margin-bottom:24px}
-.contact dl{margin-top:30px}
-.contact dt{font-family:"Kumbh Sans",sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);margin-top:22px}
-.contact dd a:hover{color:var(--red)}
-form{display:grid;gap:16px}
-input,select,textarea{font:inherit;color:var(--dark);width:100%;padding:16px 18px;border:1px solid #dfe4e8;background:var(--light);border-radius:0}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--red);outline-offset:-2px;background:#fff}
-.ok{display:none;background:#eef7ee;color:#256029;padding:14px 18px;font-size:15px}
-form .btn{justify-self:start}
-
-/* ---------- footer ---------- */
-footer{background:var(--foot);color:var(--footText);padding-top:80px}
-.fg{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:50px;padding-bottom:70px}
-.fg .flogo{display:inline-block}
-.fg .flogo img{height:130px;filter:drop-shadow(0 1px 1px rgba(255,255,255,.35))}
-footer h6{color:var(--soft);font-size:19px;margin-bottom:22px}
-footer li{list-style:none;margin-bottom:10px}
-footer a:hover{color:var(--gold)}
-.social{display:flex;gap:10px;margin-top:20px}
-.social a{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(202,194,192,.35)}
-.social a:hover{background:var(--red);border-color:var(--red)}
-.social svg{width:18px;height:18px;fill:var(--soft)}
-.copy{border-top:1px solid rgba(202,194,192,.2);padding:26px 0;text-align:center;font-size:15px}
-.totop{position:fixed;right:24px;bottom:24px;width:46px;height:46px;background:var(--red);color:#fff;display:none;place-items:center;font-size:20px;z-index:30}
-.totop.show{display:grid}
-
-/* ---------- motion ---------- */
-header.stuck{position:fixed;background:#fff;padding:8px 50px;box-shadow:0 6px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:space-between;animation:drop .45s ease}
-header.stuck .top{display:contents}
-header.stuck .logo{order:1}header.stuck .burger{order:4}
-header.stuck .logo img{height:58px;filter:none}
-header.stuck .top .btn{margin:0;order:3}
-header.stuck nav{order:2}
-header.stuck nav ul{margin:0}
-header.stuck nav a{color:var(--dark);font-size:15px;padding:10px 11px}
-header.stuck nav a:hover{color:var(--red)}
-header.stuck .burger{margin:0}header.stuck .burger span{background:var(--dark)}
-@keyframes drop{from{transform:translateY(-100%)}to{transform:none}}
-nav a{position:relative}
-nav a::after{content:"";position:absolute;left:14px;right:14px;bottom:8px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-nav a:hover::after{transform:scaleX(1)}
-.slide{transform:scale(1.02)}
-.slide.on{animation:kb 7.5s ease-out forwards}
-@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.14)}}
-.hero .tag small,.hero .tag h1{opacity:0;animation:up .9s ease forwards}
-.hero .tag small{animation-delay:.3s}.hero .tag h1{animation-delay:.55s}
-header .logo,header .top .btn,header nav li{opacity:0;animation:down .7s ease forwards}
-header .top .btn{animation-delay:.15s}
-header nav li:nth-child(1){animation-delay:.2s}header nav li:nth-child(2){animation-delay:.26s}header nav li:nth-child(3){animation-delay:.32s}header nav li:nth-child(4){animation-delay:.38s}header nav li:nth-child(5){animation-delay:.44s}header nav li:nth-child(6){animation-delay:.5s}header nav li:nth-child(7){animation-delay:.56s}header nav li:nth-child(8){animation-delay:.62s}
-header.stuck .logo,header.stuck .top .btn,header.stuck nav li{animation:none;opacity:1}
-@keyframes up{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
-@keyframes down{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:none}}
-.js .rv{opacity:0;transform:translateY(46px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-.js .rv.l{transform:translateX(-60px)}.js .rv.r{transform:translateX(60px)}.js .rv.z{transform:scale(.9)}
-.js .rv.in{opacity:1;transform:none}
-.eyebrow::after{content:"";display:block;width:0;height:3px;background:var(--red);margin-top:10px;transition:width .9s .3s ease}
-.center .eyebrow::after{margin-left:auto;margin-right:auto}
-.give .eyebrow::after{background:var(--gold)}
-.eyebrow.in::after,html:not(.js) .eyebrow::after{width:46px}
-.btn{position:relative;overflow:hidden;z-index:0}
-.btn::before{content:"";position:absolute;inset:0;background:var(--red);transform:translateX(-101%);transition:transform .35s ease;z-index:-1}
-.btn:hover::before{transform:none}
-.btn.orange::before,.btn.pale::before{background:var(--dark)}
-.btn:hover{background:var(--slate)}.btn.orange:hover{background:var(--orange)}.btn.pale:hover{background:var(--soft);color:#fff}
-.btn.orange{animation:pulse 2.6s ease-in-out infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(246,102,70,.55)}50%{box-shadow:0 0 0 12px rgba(246,102,70,0)}}
-.cols4>div{transition:transform .35s}
-.cols4>div:hover{transform:translateY(-8px)}
-.cols4 svg{transition:transform .5s,stroke .3s}
-.cols4>div:hover svg{transform:scale(1.15) rotate(-4deg);stroke:var(--orange)}
-.cols4 svg path{stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 2.2s ease .3s}
-.cols4 .in svg path,html:not(.js) .cols4 svg path{stroke-dashoffset:0}
-.tile div{transition:transform .4s}
-.tile:hover div{transform:translateY(-8px)}
-.tile h5::after{content:"";display:block;width:0;height:3px;background:var(--gold);margin-top:8px;transition:width .4s}
-.tile:hover h5::after{width:54px}
-.overlap img{transition:transform .6s ease}
-.overlap:hover img:first-child{transform:translate(-8px,-8px)}
-.overlap:hover img:last-child{transform:translate(8px,8px)}
-.ev{transition:padding .3s,background .3s}
-.ev:hover{padding-left:14px;background:rgba(255,255,255,.6)}
-.ev .d{transition:transform .3s}.ev:hover .d{transform:rotate(-4deg) scale(1.05)}
-.post h5{transition:color .25s}.post:hover h5{color:var(--red)}
-.band{position:relative;overflow:hidden}
-.band::before{content:"";position:absolute;top:-60%;left:-20%;width:40%;height:220%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.09),transparent);transform:rotate(18deg);animation:sheen 7s ease-in-out infinite}
-@keyframes sheen{0%,55%{left:-45%}100%{left:120%}}
-.band .wrap{position:relative}
-.social a{transition:transform .25s,background .25s,border-color .25s}.social a:hover{transform:translateY(-4px)}
-.totop{transition:transform .25s}.totop:hover{transform:translateY(-4px)}
-.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gold);z-index:40}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}header .logo,header .top .btn,header nav li,.hero .tag small,.hero .tag h1{opacity:1}.cols4 svg path{stroke-dashoffset:0}.eyebrow::after{width:46px}}
-
-/* ---------- responsive ---------- */
-@media(max-width:1000px){
- header,header.stuck{padding:10px 20px}
- header.stuck{display:block}
- header.stuck .top{display:flex;align-items:center;justify-content:space-between}
- header.stuck nav ul{background:#fff;box-shadow:0 10px 20px rgba(0,0,0,.1)}
- .logo img{height:84px}
- .top .btn{display:none}
- .burger{display:block;margin-top:14px}
- nav ul{display:none;flex-direction:column;background:var(--foot);margin-top:10px;padding:10px 6px}
- nav ul.open{display:flex}
- .hero{height:520px}.hero .tag{left:20px;right:20px}.dots{right:20px;bottom:20px}
- .band .wrap,.two,.pastor,.events,.give .wrap,.contact{grid-template-columns:1fr;display:grid;gap:40px}
- .band .stack{min-width:0}
- .cols4{grid-template-columns:1fr 1fr}
- .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:380px 260px 260px}
- .tile.big{grid-row:auto;grid-column:span 2}
- .cards{grid-template-columns:1fr}
- .fg{grid-template-columns:1fr 1fr}
- .sp{padding:70px 0}
- .pastor .frame{max-width:260px}
-}
-@media(max-width:560px){
- .cols4,.fg{grid-template-columns:1fr}
- .mosaic{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:280px}
- .tile.big{grid-column:auto}
- .overlap{height:340px}.overlap img:first-child{height:220px}.overlap img:last-child{height:200px}
- .btn{padding:16px 36px}
-}
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body id="home">
+<body id="top" data-wa="263784302478" data-email="faithministrieskcc25@gmail.com" data-sun-start="08:30" data-sun-end="11:00" data-sun-label="08:30 AM">
+<a class="skip" href="#main">Skip to content</a>
 <div class="progress" id="pg"></div>
+<div class="livebar" id="live" hidden><i></i><span></span><a href="visit/">Plan your visit</a></div>
 
+<div class="mast">
 <header>
  <div class="top">
-  <a class="logo" href="#home"><img src="assets/faith-ministries-logo.png" alt="Faith Ministries: Discipleship Through Relationships"></a>
-  <a class="btn orange" href="#give">Giving</a>
-  <button class="burger" aria-label="Open menu" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></button>
+  <a class="logo" href="./"><img src="assets/faith-ministries-logo.png" alt="Faith Ministries: Discipleship Through Relationships"></a>
+  <a class="btn orange" href="give/">Giving</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nl"><span></span><span></span><span></span></button>
  </div>
- <nav><ul id="nl" onclick="this.classList.remove('open')">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#principles">Principles Of Ministry</a></li>
-  <li><a href="#ministries">Ministries</a></li>
-  <li><a href="#pastor">Our Pastor</a></li>
-  <li><a href="#events">Events</a></li>
-  <li><a href="#life">Life At KCC</a></li>
-  <li><a href="#contact">Contact</a></li>
+ <nav aria-label="Main"><ul id="nl">
+  <li><a href="./" class="cur" aria-current="page">Home</a></li>
+  <li><a href="about/">About</a></li>
+  <li><a href="visit/">I’m New</a></li>
+  <li><a href="ministries/">Ministries</a></li>
+  <li><a href="events/">Events</a></li>
+  <li><a href="notes/">Church Notes</a></li>
+  <li><a href="prayer/">Prayer</a></li>
+  <li><a href="contact/">Contact</a></li>
  </ul></nav>
 </header>
-
 <div class="hero">
  <div class="slide on" style="background-image:url(assets/photos/fellowship.jpg);background-position:center 35%"></div>
  <div class="slide" style="background-image:url(assets/photos/worship.jpg);background-position:center 25%"></div>
  <div class="slide" style="background-image:url(assets/photos/gathering.jpg);background-position:center 40%"></div>
- <div class="tag"><small>Faith Ministries · Kuwadzana 6, Harare</small><h1>Kuwadzana Community Church</h1></div>
+ <div class="tag"><small>Faith Ministries · Kuwadzana 6, Harare</small><h1>Kuwadzana Community Church</h1><a class="pill" id="next" href="visit/"><b>Sundays</b> · 08:30 AM</a></div>
  <div class="dots" id="dots"></div>
 </div>
+</div>
 
+<main id="main">
 <section class="band"><div class="wrap">
  <h3><span>Our Vision:</span>Reach people and turn them into fully devoted followers of Christ</h3>
  <div class="stack">
-  <a class="btn pale" href="#contact">Join Us Sunday · 08:30 AM</a>
+  <a class="btn pale" href="visit/">Join Us Sunday · 08:30 AM</a>
   <a class="btn pale" href="https://www.youtube.com/@fmtv2053" target="_blank" rel="noopener">Watch Faith Ministries TV</a>
  </div>
 </div></section>
 
-<section class="sp" id="about"><div class="wrap two">
+<section class="sp" id="theme"><div class="wrap two">
  <div class="overlap">
   <img src="assets/photos/singer.jpg" alt="Praise and worship at KCC" loading="lazy">
   <img src="assets/photos/speaker.jpg" alt="Sharing the Word at KCC" loading="lazy">
@@ -302,7 +68,7 @@ header.stuck .logo,header.stuck .top .btn,header.stuck nav li{animation:none;opa
   <p class="ref">Isaiah 61:1-3 NKJV</p>
   <p>“The Spirit of the Lord God is upon Me, because the Lord has anointed Me to preach good tidings to the poor; He has sent Me to heal the brokenhearted, to proclaim liberty to the captives…”</p>
   <p>Kuwadzana Community Church (KCC) is the Faith Ministries church in Kuwadzana, Harare. We are one family with our sister churches, growing together in worship, the Word and genuine relationships.</p>
-  <a class="btn" href="https://faithmin.org/" target="_blank" rel="noopener">Learn More</a>
+  <a class="btn" href="about/">Learn More</a>
  </div>
 </div></section>
 
@@ -313,23 +79,24 @@ header.stuck .logo,header.stuck .top .btn,header.stuck nav li{animation:none;opa
  </div>
  <p class="eyebrow">Principles Of Ministry</p>
  <h2>Our Principles</h2>
- <div class="cols4">
-  <div><svg viewBox="0 0 64 64"><path d="M32 6v14M26 12h12M14 58V34l18-14 18 14v24zM26 58V44a6 6 0 0 1 12 0v14"/></svg><h4>The Foundation Of Ministry Is Character</h4><p>Character is more important than ministry. Ministry is a gift from God whilst character is something you are responsible for.</p></div>
-  <div><svg viewBox="0 0 64 64"><path d="M32 54S10 40 10 24a11 11 0 0 1 22-3 11 11 0 0 1 22 3c0 16-22 30-22 30z"/></svg><h4>The Motive Of Ministry Is Love</h4><p>We serve because we love God and we love people. Without love, even the greatest work counts for nothing.</p></div>
-  <div><svg viewBox="0 0 64 64"><path d="M32 8v48M18 22h28"/></svg><h4>The Measure Of Ministry Is Sacrifice</h4><p>Ministry is measured by what we are willing to lay down for others, following the example of Christ.</p></div>
-  <div><svg viewBox="0 0 64 64"><path d="M8 16c8-4 16-4 24 2 8-6 16-6 24-2v34c-8-4-16-4-24 2-8-6-16-6-24-2zM32 18v34"/></svg><h4>The Authority Of Ministry Is Submission</h4><p>Real authority flows from a life submitted to God, to His Word and to the leaders He has placed over us.</p></div>
+ <div class="cols4 cols5">
+  <div><svg viewBox="0 0 64 64"><path d="M32 6v14M26 12h12M14 58V34l18-14 18 14v24zM26 58V44a6 6 0 0 1 12 0v14"/></svg><h4>The Foundation Of Ministry Is Character</h4><p>Character is more important than ministry. Ministry is a gift from God whilst character is something you are responsible for.</p><span class="ref">Matthew 7:22-23</span></div>
+  <div><svg viewBox="0 0 64 64"><path d="M10 38h44M14 38c0 9 8 16 18 16s18-7 18-16M32 8v20M24 20l8 8 8-8"/></svg><h4>The Nature Of Ministry Is Service</h4><p>Jesus came not to be served but to serve. Greatness in the house of God is measured by service.</p><span class="ref">Matthew 20:26-28</span></div>
+  <div><svg viewBox="0 0 64 64"><path d="M32 54S10 40 10 24a11 11 0 0 1 22-3 11 11 0 0 1 22 3c0 16-22 30-22 30z"/></svg><h4>The Motive Of Ministry Is Love</h4><p>Everything God does flows from love, so everything we do must too: love the Lord, love the brethren, love the lost.</p><span class="ref">1 Corinthians 13</span></div>
+  <div><svg viewBox="0 0 64 64"><path d="M8 16c8-4 16-4 24 2 8-6 16-6 24-2v34c-8-4-16-4-24 2-8-6-16-6-24-2zM32 18v34"/></svg><h4>The Authority Of Ministry Is Submission</h4><p>Those who obey can be trusted with authority.</p><span class="ref">Hebrews 13:17</span></div>
+  <div><svg viewBox="0 0 64 64"><path d="M32 8v48M18 22h28"/></svg><h4>The Measure Of Ministry Is Sacrifice</h4><p>God has given to every person a measure of faith; we give ourselves fully in return.</p><span class="ref">Romans 12:1-3</span></div>
  </div>
 </div></section>
 
 <section class="mosaic" id="ministries">
- <a class="tile big" href="#contact"><i style="background-image:url(assets/photos/fellowship.jpg)"></i><div><h5>Kuwadzana Community Church</h5><span>Church Service · Sundays 08:30 AM</span></div></a>
- <a class="tile" href="#contact"><i style="background-image:url(assets/photos/worship.jpg);background-position:center 20%"></i><div><h5>Prayer</h5><span>Church Service</span></div></a>
- <a class="tile" href="#contact"><i style="background-image:url(assets/photos/sports.jpg)"></i><div><h5>Children &amp; Youth</h5><span>Ministry</span></div></a>
- <a class="tile" href="#contact"><i style="background-image:url(assets/photos/ladies2.jpg);background-position:center 25%"></i><div><h5>Ladies Ministry</h5><span>Ministry</span></div></a>
- <a class="tile" href="#contact"><i style="background-image:url(assets/photos/singer.jpg);background-position:center 20%"></i><div><h5>Praise and Worship</h5><span>Church Service</span></div></a>
+ <a class="tile big" href="visit/"><i style="background-image:url(assets/photos/fellowship.jpg)"></i><div><h5>Kuwadzana Community Church</h5><span>Church Service · Sundays 08:30 AM</span></div></a>
+ <a class="tile" href="prayer/"><i style="background-image:url(assets/photos/worship.jpg);background-position:center 20%"></i><div><h5>Prayer</h5><span>Send a prayer request</span></div></a>
+ <a class="tile" href="ministries/#champions"><i style="background-image:url(assets/photos/sports.jpg)"></i><div><h5>Children &amp; Youth</h5><span>Raising Champions</span></div></a>
+ <a class="tile" href="ministries/#ladies"><i style="background-image:url(assets/photos/ladies2.jpg);background-position:center 25%"></i><div><h5>Ladies Ministry</h5><span>Ministry</span></div></a>
+ <a class="tile" href="ministries/#worship"><i style="background-image:url(assets/photos/singer.jpg);background-position:center 20%"></i><div><h5>Praise and Worship</h5><span>Ministry</span></div></a>
 </section>
 
-<section class="sp" id="pastor"><div class="wrap pastor">
+<section class="sp " id="pastor"><div class="wrap pastor">
  <div class="frame"><b>KCC</b></div>
  <div>
   <p class="eyebrow">Our Pastor</p>
@@ -343,31 +110,50 @@ header.stuck .logo,header.stuck .top .btn,header.stuck nav li{animation:none;opa
   <p class="eyebrow">Calendar</p>
   <h2>Our Events</h2>
   <p>This week at Kuwadzana Community Church, where faith meets fellowship. Join us for worship, and follow our Facebook page for the latest announcements.</p>
-  <a class="btn" style="margin-top:28px" href="https://www.facebook.com/profile.php?id=61572451777077" target="_blank" rel="noopener">View More Events</a>
+  <a class="btn" style="margin-top:28px" href="events/">View More Events</a>
  </div>
  <div>
   <div class="ev"><div class="d"><b>SUN</b><small>08:30 AM</small></div><div><h5>Sunday Service</h5><p>Every Sunday at 104168 1st Street, Kuwadzana 6. Praise, prayer and the Word for the whole family.</p></div></div>
-  <div class="ev"><div class="d"><b>TBC</b><small>Weekly</small></div><div><h5>Prayer Meeting</h5><p>Day and time to be confirmed.</p></div></div>
-  <div class="ev"><div class="d"><b>TBC</b><small>Weekly</small></div><div><h5>Cell Groups</h5><p>Meeting in homes across Kuwadzana. Contact us to find a group near you.</p></div></div>
+  <div class="ev"><div class="d"><b>SAT</b><small>Weekly</small></div><div><h5>Raising Champions: Kids Football</h5><p>Child evangelism through sport with football legend Cheetah Antonio. All children are welcome. Contact us for the start time.</p></div></div>
+  <div class="ev"><div class="d"><b>TBC</b><small>Weekly</small></div><div><h5>Cell Groups</h5><p>Small groups meeting in homes across Kuwadzana to pray, study and do life together. Contact us to find a group near you.</p></div></div>
  </div>
 </div></section>
 
-<section class="sp" id="life"><div class="wrap center">
- <p class="eyebrow">From Our Church Family</p>
- <h2>Life At KCC</h2>
+<section class="sp" id="notes"><div class="wrap center">
+ <p class="eyebrow">From The Pulpit</p>
+ <h2>Church Notes</h2>
  <div class="cards">
-  <article class="post"><div class="ph"><img src="assets/photos/ladies3.jpg" alt="A KCC member holding a plant at a church gathering" loading="lazy"><em>Fellowship</em></div><h5>Growing together</h5><p>Sharing life with one another beyond the Sunday service.</p></article>
-  <article class="post"><div class="ph"><img src="assets/photos/children.jpg" alt="Children and youth gathered under a tree" loading="lazy" style="object-position:center 20%"><em>Community</em></div><h5>Reaching the next generation</h5><p>Meeting the children and young people of Kuwadzana where they are.</p></article>
-  <article class="post"><div class="ph"><img src="assets/photos/ladies.jpg" alt="A KCC member smiling at a church gathering" loading="lazy" style="object-position:center 20%"><em>Family</em></div><h5>A place to belong</h5><p>Wherever you are on your journey, there is a seat for you at KCC.</p></article>
+  <article class="post" data-note data-series="Year of Jubilee" data-search="advancing to possess year of jubilee joshua 1:1–9 kcc teaching team god has already given the promise; our part is to rise, step forward in faith and take possession.">
+   <a href="notes/advancing-to-possess/"><div class="ph"><img src="assets/photos/worship.jpg" alt="" loading="lazy" style="object-position:center 25%"><em>Year of Jubilee</em></div></a>
+   <small>Sample · 8 November 2026 · Joshua 1:1–9</small>
+   <h5><a href="notes/advancing-to-possess/">Advancing to Possess</a></h5>
+   <p>God has already given the promise; our part is to rise, step forward in faith and take possession.</p>
+   <a class="more" href="notes/advancing-to-possess/">Read the notes →</a>
+  </article>
+  <article class="post" data-note data-series="Family" data-search="raising champions: train up a child family proverbs 22:6 kcc teaching team children are not the church of tomorrow — they are disciples today, and the whole church shares in raising them.">
+   <a href="notes/train-up-a-child/"><div class="ph"><img src="assets/photos/children.jpg" alt="" loading="lazy" style="object-position:center 25%"><em>Family</em></div></a>
+   <small>Sample · 1 November 2026 · Proverbs 22:6</small>
+   <h5><a href="notes/train-up-a-child/">Raising Champions: Train Up a Child</a></h5>
+   <p>Children are not the church of tomorrow — they are disciples today, and the whole church shares in raising them.</p>
+   <a class="more" href="notes/train-up-a-child/">Read the notes →</a>
+  </article>
+  <article class="post" data-note data-series="34 Years of Grace" data-search="hitherto the lord hath helped us 34 years of grace 1 samuel 7:7–14 kcc teaching team remembering god's faithfulness in the past gives us confidence to trust him with the future.">
+   <a href="notes/hitherto-the-lord-hath-helped-us/"><div class="ph"><img src="assets/photos/fellowship.jpg" alt="" loading="lazy" style="object-position:center 25%"><em>34 Years of Grace</em></div></a>
+   <small>Sample · 25 October 2026 · 1 Samuel 7:7–14</small>
+   <h5><a href="notes/hitherto-the-lord-hath-helped-us/">Hitherto the Lord Hath Helped Us</a></h5>
+   <p>Remembering God's faithfulness in the past gives us confidence to trust Him with the future.</p>
+   <a class="more" href="notes/hitherto-the-lord-hath-helped-us/">Read the notes →</a>
+  </article>
  </div>
+ <a class="btn" style="margin-top:56px" href="notes/">All Church Notes</a>
 </div></section>
 
-<section class="give sp" id="give"><div class="wrap">
+<section class="give sp"><div class="wrap">
  <div>
-  <p class="eyebrow">Giving</p>
-  <h2>Partner with us in the work</h2>
-  <p>Your generosity supports the ministry, outreach and care of our church family in Kuwadzana and beyond. Online giving is not yet available on this site. Please contact the church office for giving details.</p>
-  <a class="btn orange" style="margin-top:28px" href="#contact">Contact The Office</a>
+  <p class="eyebrow">Prayer</p>
+  <h2>How can we pray for you?</h2>
+  <p>Whatever you are facing, you don’t have to carry it alone. Send us your prayer request and our pastors and prayer team will stand with you.</p>
+  <a class="btn orange" style="margin-top:28px" href="prayer/">Request Prayer</a>
  </div>
  <div class="box">
   <h5>Church Office</h5>
@@ -381,36 +167,15 @@ header.stuck .logo,header.stuck .top .btn,header.stuck nav li{animation:none;opa
 
 <section class="band"><div class="wrap">
  <h3>Find out How, Where and When We Worship. We Hope to See You Soon!</h3>
- <div class="stack"><a class="btn pale" href="#contact">Contact Us</a></div>
+ <div class="stack"><a class="btn pale" href="visit/">Plan Your Visit</a></div>
 </div></section>
-
-<section class="sp" id="contact"><div class="wrap contact">
- <div>
-  <p class="eyebrow">New To KCC?</p>
-  <h2>Get in Touch</h2>
-  <p>We would love to welcome you. Send us a message, call the office, or simply join us this Sunday.</p>
-  <dl>
-   <dt>Sunday Service</dt><dd>Every Sunday, 08:30 AM</dd>
-   <dt>Address</dt><dd>104168 1st Street, Kuwadzana 6, Harare, Zimbabwe</dd>
-   <dt>Phone</dt><dd><a href="tel:+263784302478">078 430 2478</a></dd>
-   <dt>Email</dt><dd><a href="mailto:faithministrieskcc25@gmail.com">faithministrieskcc25@gmail.com</a></dd>
-  </dl>
- </div>
- <form id="cf">
-  <input required placeholder="Your name" aria-label="Your name">
-  <input type="email" required placeholder="Email address" aria-label="Email address">
-  <select aria-label="Reason for contacting us"><option>I’m new to KCC</option><option>Prayer request</option><option>Join a cell group</option><option>Giving</option><option>General enquiry</option></select>
-  <textarea rows="6" required placeholder="Your message" aria-label="Your message"></textarea>
-  <button class="btn" type="submit">Send Message</button>
-  <div class="ok" id="ok">Thank you. This demo form does not send yet; it needs connecting to the church email before launch.</div>
- </form>
-</div></section>
+</main>
 
 <footer>
  <div class="wrap fg">
-  <div><span class="flogo"><img src="assets/faith-ministries-logo.png" alt="Faith Ministries"></span></div>
-  <div><h6>Office</h6><ul><li>104168 1st Street, Kuwadzana 6;<br>Harare, Zimbabwe</li><li><a href="mailto:faithministrieskcc25@gmail.com">faithministrieskcc25@gmail.com</a></li><li><a href="tel:+263784302478">078 430 2478</a></li></ul></div>
-  <div><h6>Links</h6><ul><li><a href="#about">About Us</a></li><li><a href="#give">Giving</a></li><li><a href="#events">Events</a></li><li><a href="https://www.youtube.com/@fmtv2053" target="_blank" rel="noopener">Faith Ministries TV</a></li><li><a href="https://faithmin.org/" target="_blank" rel="noopener">Faith Ministries Website</a></li><li><a href="https://bccfm.org/" target="_blank" rel="noopener">Borrowdale Community Church</a></li></ul></div>
+  <div><span class="flogo"><img src="assets/faith-ministries-logo.png" alt="Faith Ministries" loading="lazy"></span></div>
+  <div><h6>Office</h6><ul><li>104168 1st Street, Kuwadzana 6;<br>Harare, Zimbabwe</li><li><a href="mailto:faithministrieskcc25@gmail.com">faithministrieskcc25@gmail.com</a></li><li><a href="tel:+263784302478">078 430 2478</a></li><li>Sunday Service: 08:30 AM</li></ul></div>
+  <div><h6>Links</h6><ul><li><a href="about/">About Us</a></li><li><a href="visit/">Plan Your Visit</a></li><li><a href="give/">Giving</a></li><li><a href="notes/">Church Notes</a></li><li><a href="https://www.youtube.com/@fmtv2053" target="_blank" rel="noopener">Faith Ministries TV</a></li><li><a href="https://faithmin.org/" target="_blank" rel="noopener">Faith Ministries Website</a></li><li><a href="https://bccfm.org/" target="_blank" rel="noopener">Borrowdale Community Church</a></li></ul></div>
   <div><h6>Get in Touch</h6><p>Follow KCC for news, photos and announcements.</p>
    <div class="social">
     <a href="https://www.facebook.com/profile.php?id=61572451777077" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-1 .3-1.500 1.600-1.500H18V1h-3c-3.300 0-5 2-5 5v2H7v3.500h3V23h4V11.500h3.200L18 8z"/></svg></a>
@@ -421,27 +186,7 @@ header.stuck .logo,header.stuck .top .btn,header.stuck nav li{animation:none;opa
  </div>
  <div class="copy">Kuwadzana Community Church © 2026. A Faith Ministries church.</div>
 </footer>
-<a class="totop" id="tt" href="#home" aria-label="Back to top">↑</a>
-
-<script>
-const slides=[...document.querySelectorAll('.slide')],dots=document.getElementById('dots');let cur=0,timer;
-function go(n){slides[cur].classList.remove('on');dots.children[cur].classList.remove('on');cur=(n+slides.length)%slides.length;slides[cur].classList.add('on');dots.children[cur].classList.add('on')}
-slides.forEach((s,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Show photo '+(i+1));if(!i)b.className='on';b.onclick=()=>{go(i);clearInterval(timer);timer=setInterval(()=>go(cur+1),6000)};dots.appendChild(b)});
-timer=setInterval(()=>go(cur+1),6000);
-document.getElementById('cf').onsubmit=e=>{e.preventDefault();document.getElementById('ok').style.display='block';e.target.reset()};
-document.documentElement.classList.add('js');
-const hd=document.querySelector('header'),pg=document.getElementById('pg'),tt=document.getElementById('tt');
-function onScroll(){const y=scrollY;tt.classList.toggle('show',y>700);hd.classList.toggle('stuck',y>520);pg.style.width=(y/(document.documentElement.scrollHeight-innerHeight)*100)+'%';
- const h=document.querySelector('.hero .tag');if(y<700)h.style.transform='translateY('+y*0.25+'px)';}
-addEventListener('scroll',onScroll,{passive:true});onScroll();
-// reveal on scroll
-const mark=(sel,cls,step)=>document.querySelectorAll(sel).forEach((e,i)=>{e.classList.add('rv');cls&&e.classList.add(cls);e.style.setProperty('--d',(step?i%4*step:0)+'s')});
-mark('.band h3','l');mark('.band .stack','r');mark('.overlap','l');mark('.two>div:last-child','r');
-mark('.mission, #principles h2, section h2');mark('.cols4>div','',.14);mark('.tile','z',.1);
-mark('.pastor .frame','l');mark('.pastor>div:last-child','r');mark('.events>div:first-child','l');mark('.ev','r',.14);
-mark('.post','',.16);mark('.give .wrap>div:first-child','l');mark('.give .box','r');mark('.contact>div','l');mark('.contact form','r');mark('.fg>div','',.12);
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.14,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.rv,.eyebrow').forEach(e=>io.observe(e));
-</script>
+<a class="totop" id="tt" href="#top" aria-label="Back to top">↑</a>
+<script src="assets/site.js"></script>
 </body>
 </html>
