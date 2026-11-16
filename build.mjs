@@ -79,12 +79,11 @@ ${body}
  <div class="wrap fg">
   <div><span class="flogo"><img src="${r}assets/faith-ministries-logo.png" alt="Faith Ministries" loading="lazy"></span></div>
   <div><h6>Office</h6><ul><li>${esc(site.address)};<br>${esc(site.city)}</li><li><a href="mailto:${site.email}">${site.email}</a></li><li><a href="${tel}">${site.phone}</a></li><li>Sunday Service: ${site.sunday.label}</li></ul></div>
-  <div><h6>Links</h6><ul><li><a href="${r}about/">About Us</a></li><li><a href="${r}visit/">Plan Your Visit</a></li><li><a href="${r}give/">Giving</a></li><li><a href="${r}notes/">Church Notes</a></li><li><a href="${site.youtube}" ${ext}>Faith Ministries TV</a></li><li><a href="${site.faithMinistries}" ${ext}>Faith Ministries Website</a></li><li><a href="${site.bcc}" ${ext}>Borrowdale Community Church</a></li></ul></div>
+  <div><h6>Links</h6><ul><li><a href="${r}about/">About Us</a></li><li><a href="${r}visit/">Plan Your Visit</a></li><li><a href="${r}give/">Giving</a></li><li><a href="${r}notes/">Church Notes</a></li></ul></div>
   <div><h6>Get in Touch</h6><p>Follow KCC for news, photos and announcements.</p>
    <div class="social">
     <a href="${site.facebook}" ${ext} aria-label="Facebook">${ICON.fb}</a>
     <a href="${site.instagram}" ${ext} aria-label="Instagram">${ICON.ig}</a>
-    <a href="${site.youtube}" ${ext} aria-label="YouTube">${ICON.yt}</a>
    </div>
   </div>
  </div>
@@ -197,7 +196,6 @@ const add = (path, o) => pages.push({ path, p: "../".repeat(path.split("/").filt
  <h3><span>Our Vision:</span>${vision.vision}</h3>
  <div class="stack">
   <a class="btn pale" href="visit/">Join Us Sunday · ${site.sunday.label}</a>
-  <a class="btn pale" href="${site.youtube}" ${ext}>Watch Faith Ministries TV</a>
  </div>
 </div></section>
 

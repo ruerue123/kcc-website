@@ -382,3 +382,9 @@ main dt{font-family:"Kumbh Sans",sans-serif;font-weight:700;font-size:13px;lette
 main dd a:hover{color:var(--red)}
 .post h5 a:hover{color:var(--red)}
 @media(max-width:1000px){header nav li{animation:none;opacity:1}}
+/* five principles on one row on wide screens */
+@media(min-width:1001px){
+ .cols5{display:grid;grid-template-columns:repeat(5,1fr);gap:26px}
+ .cols5 h4{font-size:19px}
+ .cols5 p{font-size:15.5px}
+}
